@@ -126,6 +126,11 @@ alias cds="cd /home/matt/java_workspace/source/wnba/nba-optimizer/test_wnba/mip_
 
 alias jpid="ps -e | grep java"
 alias prettyjson='python -m json.tool'
+alias exp="explorer.exe ."
+alias findit="grep -R"
 
-alias stopall="docker container stop $(docker ps -q)"
+alias concplex="ssh matt@192.168.0.54"
+alias conbu="ssh matt@192.168.54.3"
+alias congpro="ssh matt@192.168.0.21"
+alias congpro2="ssh matt@192.168.0.12"
 
