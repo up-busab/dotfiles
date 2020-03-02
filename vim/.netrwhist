@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/gotsoccer/workspace/source/lib/prooptimizer2/sports_scheduling'
+let g:netrw_dirhist_2='/home/gotsoccer/workspace/source/lib/prooptimizer2/sports_scheduling/readers'
+let g:netrw_dirhist_3='/home/gotsoccer/workspace/source/lib/prooptimizer2/sports_scheduling'
+let g:netrw_dirhist_4='/home/gotsoccer/workspace/source/lib/prooptimizer2'
+let g:netrw_dirhist_5='/home/gotsoccer/workspace/source/lib'
+let g:netrw_dirhist_6='/home/gotsoccer/workspace/source'
+let g:netrw_dirhist_7='/home/gotsoccer/workspace/source/cba'
