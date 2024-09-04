@@ -116,21 +116,47 @@ if ! shopt -oq posix; then
   fi
 fi
 
+PATH=$PATH:/home/matt/.local/bin
+
 alias bashit="vim ~/.bashrc"
 alias rebash="source ~/.bashrc"
 
-alias cdt="cd /home/matt/transfer"
-alias cdd="cd /home/matt/workspace"
-alias cdp="cd /home/matt/workspace/source/mlb/solver"
-alias cds="cd /home/matt/java_workspace/source/wnba/nba-optimizer/test_wnba/mip_solver"
+alias cds="cd /mnt/c/Users/matt.miller/src"
 
 alias jpid="ps -e | grep java"
 alias prettyjson='python -m json.tool'
 alias exp="explorer.exe ."
 alias findit="grep -R"
 
+alias devtunnel="autossh -M 0 -f -T -N dev-mongosh-forward"
+alias apitunnel="autossh -M 0 -f -T -N dev-api-forward"
+alias bapitunnel="autossh -M 0 -f -T -N dev-billing-api-forward"
+alias biltunnel="autossh -M 0 -f -T -N qa-billing-forward"
+
+#alias prodtunnel="autossh -M 0 -f -T -N new-prod1-mongo"
+alias prodtunnel="autossh -M 0 -f -T -N prod-mongo-forward"
+alias mongtunnel="autossh -M 0 -f -T -N dev-mongo-forward"
+alias mongqunnel="autossh -M 0 -f -T -N qa-mongo-forward"
+
+alias sshoot="vim ~/.ssh/config"
+alias collapse="pkill -3 autossh; killall ssh; ps -e | grep ssh"
+
+#alias ducks="nohup sudo dockerd &"
+alias ducks="sudo service docker start"
+#alias moreducks="sudo service docker restart"
+alias dups="docker compose up"
+
+alias localize="git stash pop $(git stash list --pretty='%gd %s'|grep local-config|head -1|gawk '{print $1}')"
+#alias delocalize='git stash -m \"local-config\" -- src/main/resources/application-local.yml src/main/resources/liquibase.properties'
+alias delocalize='git stash -m \"local-config\" -- src/main/resources/certs/matt.pem src/main/resources/application.yml'
+
+alias gs="git status"
+alias gitreset="git reset HEAD~"
+alias gitrecommit="git commit -c ORIG_HEAD"
+alias gitpushup="git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD | gawk '{print $1}')"
+alias push!="git push --set-upstream origin \$(git rev-parse --abbrev-ref HEAD)"
+
+
 alias concplex="ssh matt@192.168.0.54"
-alias conbu="ssh matt@192.168.54.3"
-alias congpro="ssh matt@192.168.0.21"
-alias congpro2="ssh matt@192.168.0.12"
+alias goodbye="wsl.exe --shutdown"
 

@@ -1,0 +1,11 @@
+#Github Work Account
+Host git_work
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_ed25519
+
+#Github Personal account- EX: url = git_personal:up-busab/repo.git
+Host git_personal
+        HostName github.com
+        User git
+        IdentityFile ~/.ssh/id_ed25519_personal

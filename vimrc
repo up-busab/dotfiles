@@ -11,6 +11,13 @@ set expandtab
 
 set hlsearch
 
+"cursor
+set ttimeout
+set ttimeoutlen=1
+set ttyfast
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
+
 hi Search cterm=NONE ctermbg=Black ctermfg=Red
 hi MatchParen cterm=none ctermbg=Black ctermfg=Red
 
@@ -66,4 +73,3 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
-
