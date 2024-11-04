@@ -32,6 +32,10 @@ noremap <C-T> :tabnew %:p:h <CR>
 noremap <C-Right> gt
 noremap <C-Left> gT
 
+"vim.keymap.set('n', '<C-t>', ":tabnew %:p:h <CR>", { })
+"vim.keymap.set('n', '<C-Right>', ":tabnext <CR>", { })
+"vim.keymap.set('n', '<C-Left>', ":tabprevious <CR>", { })
+
 "no i mean it!
 ca W w!
 ca W1 w!
